@@ -123,7 +123,7 @@ public class ShopFragment extends Fragment implements IView {
         }
     }
     /**截取字符串是方法*/
-    private List<!-- <String> --> image= new ArrayList<>();
+    private List<String> image= new ArrayList<>();
     public void sub(String url){
         //获取以“|”为截取的下标位置
         int i = url.indexOf("|");
@@ -144,7 +144,7 @@ public class ShopFragment extends Fragment implements IView {
                 break;
             case R.id.price:
                 EventBus.getDefault().postSticky(childBean.getData().getPrice());
-               ((ShowActivity)getActivity()).replace(2);
+                ((ShowActivity)getActivity()).replace(2);
                 break;
         }
     }

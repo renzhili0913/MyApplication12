@@ -42,7 +42,8 @@ public class CommentFragment extends Fragment {
         }
     }
 
-    @Override
+
+   @Override
     public void onDestroyView() {
         super.onDestroyView();
         if (bind!=null) {
